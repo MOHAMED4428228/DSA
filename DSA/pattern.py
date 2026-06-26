@@ -1,7 +1,6 @@
-def pattern(n):
-    if n == 0:
-        return
-    pattern(n - 1)
-    print("*" * n)
+rows = 5
 
-pattern(5)
+for i in range(1, rows + 1):
+    for j in range(1, i + 1):
+        print(j, end=" ")
+    print()
